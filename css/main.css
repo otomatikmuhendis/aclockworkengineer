@@ -243,3 +243,7 @@ tr{
 table{
   margin-bottom: 20px;
 }
+
+#selectedLanguage {
+  color: #777;
+}

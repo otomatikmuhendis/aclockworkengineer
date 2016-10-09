@@ -33,6 +33,15 @@
           </li>
         {% endfor %} 
       </ul>
+      {% if page.tr %}
+          {% assign permalink = page.tr %}
+      {% else %}
+          {% assign permalink = "" %}
+      {% endif %}
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://otomatikmuhendis.com{{ permalink }}" title="Türkçe">TR</a></li>
+        <li><a href="http://en.otomatikmuhendis.com" title="English" id="selectedLanguage">EN</a></li>
+      </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>

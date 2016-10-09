@@ -1,53 +1,48 @@
 ---
 layout: default
 ---
-<div class="post">
-<header class="header-post">
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-      <div class="post-heading">
-      	{% if page.image and page.image != "" %}
-      	  <div class="featuredImg" style="background-image: url('{{ page.image | prepend: site.baseurl | replace: '//', '/' }}')"></div>
-      	{% endif %} 
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <h2 class="post-subheading">{{ page.subtitle }}</h2>
-        {% endif %}
-        <span class="post-meta">Published by {{ page.author }} on {{ page.date | date_to_long_string  }}.
-         <br/>
-         {% if page.tags %}
-        <span class="glyphicon glyphicon-tags post-tag" title="Etiketler"></span>  {% include post-tags.html %}
-        {% endif %}
-        {% if page.categories %}
-        <span class="glyphicon glyphicon-folder-open post-tag" title="Kategori"></span>  {{ page.categories | join: ", " }}
-        {% endif %}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+  <div class="post">
+  <header class="header-post">
+        <div class="post-heading">
+          {% if page.image and page.image != "" %}
+            <div class="featuredImg" style="background-image: url('{{ page.image | prepend: site.baseurl | replace: '//', '/' }}')"></div>
+          {% endif %} 
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="post-subheading">{{ page.subtitle }}</h2>
+          {% endif %}
+          <span class="post-meta">Published by {{ page.author }} on {{ page.date | date_to_long_string  }}.
+          <br/>
+          {% if page.tags %}
+          <span class="glyphicon glyphicon-tags post-tag" title="Etiketler"></span>  {% include post-tags.html %}
+          {% endif %}
+          {% if page.categories %}
+          <span class="glyphicon glyphicon-folder-open post-tag" title="Kategori"></span>  {{ page.categories | join: ", " }}
+          {% endif %}
 
-         </span>
+          </span>
+        </div>
+  </header>
+
+  <article>
+      {{ content }}
+      <br/>
+      <div style="float:right;">
+        <div class="socialPanel">
+          <div class="fb-like" data-href="https://www.facebook.com/{{site.author.facebook}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </div>
+        <div class="socialPanel">
+          <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"></div>
+        </div>
+        <div class="socialPanel"><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_EN</script><script type="IN/Share" data-url="{{site.url}}{{page.url}}" data-counter="right"></script></div>
       </div>
-     </div>
-  </div>
-</header>
+  </article>
 
-<article>
-  <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-	  {{ content }}
-	  <br/>
-	  <div style="float:right;">
-	  	<div style="float:left;width:100px;">
-        <div class="fb-like" data-href="https://www.facebook.com/{{site.author.facebook}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-      </div>
-      <div style="float:left;width:100px;">
-        <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"></div>
-	  	</div>
-	  	<div style="float:left;width:100px;"><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: tr_TR</script><script type="IN/Share" data-url="{{site.url}}{{page.url}}" data-counter="right"></script></div>
-	  </div>
-	</div>
   </div>
-</article>
-
 </div>
-
+</div>
 {% if page.author %}
 <div class="footer-post">
   <div class="row post-author-row">
@@ -72,12 +67,12 @@ layout: default
     <ul class="pager blog-pager">
       {% if page.previous.url %}
       <li class="previous">
-        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; ÖNCEKİ YAZI</a>
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; PREVIOUS</a>
       </li>
       {% endif %}
       {% if page.next.url %}
       <li class="next">
-        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">SONRAKİ YAZI &rarr;</a>
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">NEXT &rarr;</a>
       </li>
       {% endif %}
     </ul>

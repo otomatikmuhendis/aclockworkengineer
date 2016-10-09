@@ -190,7 +190,7 @@ header.header-post .post-heading .post-subheading {
   font-weight: 800;
 }
 
-.post-preview {
+.post-preview, .post {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 0 0 #e5e5e5;
@@ -240,10 +240,20 @@ tr{
   border-bottom: 1px solid #bbb;
 }
 
+td {
+  padding: 6px 0;
+  padding-right: 6px;
+}
+
 table{
   margin-bottom: 20px;
 }
 
 #selectedLanguage {
   color: #777;
+}
+
+.socialPanel {
+  float:left;
+  width:100px;
 }

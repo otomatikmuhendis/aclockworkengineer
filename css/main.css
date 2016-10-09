@@ -1,0 +1,245 @@
+@import url("pygment_highlights.css");
+
+/* --- General --- */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+  color: #404040;
+  background: #f5f5f5;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 180px;
+  background-color: #e5e5e5;
+  padding-top: 20px;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.navbar-default {
+  background-color: #3776ab;
+  border-color: #326c9d;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #90989a;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #90989a;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #90989a;
+  background-color: #326c9d;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #90989a;
+  background-color: #326c9d;
+}
+.navbar-default .navbar-toggle {
+  border-color: #326c9d;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #326c9d;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #90989a;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #90989a;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #90989a;
+    background-color: #326c9d;
+  }
+}
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.social .fa-circle {
+    color: #f5f5f5;
+}
+
+.social .fa-facebook {
+    color: #4060A5;
+}
+
+.social .fa-twitter {
+    color: #00ABE3;
+}
+
+.social .fa-github {
+    color: #000;
+}
+
+.social .fa-google-plus {
+    color: #e64522;
+}
+
+.social .fa-linkedin {
+    color: #0094BC;
+}
+code {
+  font-size: 80%;
+}
+
+/* --- Post and page layout --- */
+
+header.header-page {
+  margin-bottom: 20px;
+}
+
+header.header-page .page-heading {
+  text-align: center;
+}
+
+header.header-post .post-heading h1 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+header.header-page .page-heading h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+header.header-post .post-heading .post-subheading,
+header.header-page .page-heading .page-subheading {
+  font-size: 24px;
+  line-height: 1.1;
+  display: block;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
+header.header-post .post-heading .post-subheading {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  header.header-post .post-heading h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header.header-page .page-heading h1 {
+    font-size: 72px;
+  }
+}
+
+.post-heading .post-meta {
+  color: #808080;
+  font-style: italic;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.post-preview .post-read-more {
+  font-weight: 800;
+}
+
+.post-preview {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 0 #e5e5e5;
+  margin: 0 0 2em 0;
+  padding: 3em;
+}
+
+.featuredImg{
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.post-preview img{
+   width: 100%;
+   height: auto;
+}
+
+
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify; 
+  font-size: 16px;
+}
+.tag-cloud li {
+  display: inline-block;
+  margin: 0 12px 12px 0; 
+}
+#archives {
+  padding: 5px;
+}
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd;
+}
+.archive-item {
+  margin-left: 5px;
+}
+.post-tags {
+  text-align: right;
+}
+
+tr{
+  border-bottom: 1px solid #bbb;
+}
+
+table{
+  margin-bottom: 20px;
+}

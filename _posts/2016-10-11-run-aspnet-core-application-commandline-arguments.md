@@ -10,7 +10,7 @@ tags:
 published: true 
 ---
 
-The .dll file that contains [ASP.NET Core](https://www.asp.net/core) application can run on [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer) without the need to IIS. When you run it with [dotnet cli](https://github.com/dotnet/cli), it works like a console application.
+The DLL file that contains [ASP.NET Core](https://www.asp.net/core) application can run on [KestrelHttpServer](https://github.com/aspnet/KestrelHttpServer) without the need to IIS. When you run it with [dotnet cli](https://github.com/dotnet/cli), it works like a console application.
 
 So we want to deploy it to [Heroku](https://www.heroku.com/) cloud platform to see its cross-platform capabilites.
 
@@ -24,7 +24,7 @@ In order to give this capability to our application, we could add the reference 
 
 Now, we could convert the command line arguments to configuration settings and use them on the web host builder on Main method of the Program class.
 
-Finally, the Program.cs file will look this;
+Finally, the Program.cs file will look like this;
 
 <!--more-->
 

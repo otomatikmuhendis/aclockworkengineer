@@ -7,6 +7,7 @@ tr: /2016/10/11/aspnet-core-uygulamasini-parametreyle-calistirmak/
 tags: 
   - aspnet core
   - commandline
+  - dotnet
 published: true 
 ---
 

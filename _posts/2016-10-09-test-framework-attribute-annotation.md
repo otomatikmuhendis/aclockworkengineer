@@ -3,7 +3,7 @@ author: Olcay Bayram
 layout: post
 title: Attributes and Annotations of Testing Frameworks
 tr: /2016/10/09/test-framework-attribute-annotation/
-categories: test
+categories: Testing
 tags: 
   - test
   - nunit

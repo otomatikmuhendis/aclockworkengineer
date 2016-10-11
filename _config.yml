@@ -27,9 +27,9 @@ avatar: "/img/avatar-icon.png"
 
 # List of links in the navigation bar
 navbar-links:
-  Software: "category/yazilim"
-  Database: "category/veritabani"
-  System: "category/sistem"
+  Software: "category/software"
+  Database: "category/database"
+  Testing: "category/testing"
   About: "about"
   
 # --- Footer options --- #

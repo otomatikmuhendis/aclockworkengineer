@@ -32,6 +32,6 @@ We will discuss about frequently used ones to run test scenarious properly. You 
 
 There is a little difference between them except that the xUnit framework. xUnit prefers inheritance for the ones that it doesn't want to be used very often.
 
-If you don't want to run a test temporarily you could use ignore attribute.
+If you don't want to run a test temporarily you could use ignore attribute. Your test runner tool will skip that test and show it with the provided message.
 
 Category separation is a best practice on testing because you could run your test cases by its category in a Continuous Integration application.

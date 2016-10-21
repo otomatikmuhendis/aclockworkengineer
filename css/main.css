@@ -206,9 +206,10 @@ header.header-post .post-heading .post-subheading {
   margin-bottom: 10px;
 }
 
-.post-preview img{
+.post-preview img, .responsiveImg img{
    width: 100%;
    height: auto;
+   border: 2px solid #ccc;
 }
 
 

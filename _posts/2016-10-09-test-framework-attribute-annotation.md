@@ -45,3 +45,147 @@ If you don't want to run a test temporarily you could use ignore attribute. Your
 [![testingIgnoreJenkins.png]({{site.baseurl}}/img/testingIgnoreJenkins.png)]({{site.baseurl}}/img/testingIgnoreJenkins.png)
 </span>
 *Display on Jenkins CI Test Coverage Report*
+
+Let's build a test project to see the order of the attributes preciesly.
+
+Create a new Class Library project and a method to test like the one below.
+
+{% highlight csharp linenos %}
+namespace OtomatikMuhendis.TestSample
+{
+  public class DivideClass
+  {
+    public static int DivideMethod(int numerator, int denominator)
+    {
+      return (numerator / denominator);
+    }
+  }
+}
+{% endhighlight %}
+
+Add an Unit Test Project to the Solution and add a reference of the class library project.
+
+Replace the unit test class with the following example.
+
+{% highlight csharp linenos %}
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OtomatikMuhendis.TestSample;
+using System.Diagnostics;
+
+namespace OtomatikMuhendis.UnitTest
+{
+  [TestClass]
+  public sealed class DivideClassTest
+  {
+    [AssemblyInitialize]
+    public static void AssemblyInit(TestContext context)
+    {
+      Debug.WriteLine("AssemblyInit " + context.TestName);
+    }
+
+    [ClassInitialize]
+    public static void ClassInit(TestContext context)
+    {
+      Debug.WriteLine("ClassInit " + context.TestName);
+    }
+
+    [TestInitialize]
+    public void Initialize()
+    {
+      Debug.WriteLine("TestMethodInit");
+    }
+
+    [TestMethod]
+    [TestCategory("MathLibTests")]
+    public void DivideMethod_DivideByOne_ResultIsEqual()
+    {
+      //Arrenge
+      var numerator = 6;
+      var denominator = 1;
+
+      //Act
+      var result = DivideClass.DivideMethod(numerator, denominator);
+
+      //Assert
+      Assert.AreEqual(numerator, result);
+
+      Debug.WriteLine("TestMethod_DivideMethod_DivideByOne_ResultIsEqual");
+
+    }
+
+    [TestMethod]
+    [TestCategory("MathLibTests")]
+    public void DivideMethod_DivideByTwo_ResultIsHalf()
+    {
+      //Arrenge
+      var numerator = 6;
+      var denominator = 2;
+
+      //Act
+      var result = DivideClass.DivideMethod(numerator, denominator);
+
+      //Assert
+      Assert.AreEqual(numerator, result * denominator);
+
+      Debug.WriteLine("TestMethod_DivideMethod_DivideByTwo_ResultIsHalf");
+
+    }
+
+    [TestMethod]
+    [TestCategory("MathLibTests")]
+    [ExpectedException(typeof(System.DivideByZeroException))]
+    [Ignore]
+    public void DivideMethod_DivideByZero_ThrowsDivideByZeroException()
+    {
+      //Arrenge
+      var numerator = 6;
+      var denominator = 0;
+
+      //Act
+      var result = DivideClass.DivideMethod(numerator, denominator);
+
+      //Assert
+      Assert.AreEqual(numerator, result * denominator);
+
+      Debug.WriteLine("TestMethod_DivideMethod_DivideByZero_ThrowsDivideByZeroException");
+
+    }
+
+    [TestCleanup]
+    public void Cleanup()
+    {
+      Debug.WriteLine("TestMethodCleanup");
+    }
+
+    [ClassCleanup]
+    public static void ClassCleanup()
+    {
+      Debug.WriteLine("ClassCleanup");
+    }
+
+    [AssemblyCleanup]
+    public static void AssemblyCleanup()
+    {
+      Debug.WriteLine("AssemblyCleanup");
+    }
+  }
+}
+{% endhighlight %}
+
+<span class="responsiveImg">
+[![testingProject.png]({{site.baseurl}}/img/testingProject.png)]({{site.baseurl}}/img/testingProject.png)
+</span>
+*Project will be like this*
+
+Output of our test run;
+
+    AssemblyInit DivideMethod_DivideByOne_ResultIsEqual
+    ClassInit DivideMethod_DivideByOne_ResultIsEqual
+    TestMethodInit
+    TestMethod_DivideMethod_DivideByOne_ResultIsEqual
+    TestMethodCleanup
+    TestMethodInit
+    TestMethod_DivideMethod_DivideByTwo_ResultIsHalf
+    TestMethodCleanup
+    ClassCleanup
+    AssemblyCleanup

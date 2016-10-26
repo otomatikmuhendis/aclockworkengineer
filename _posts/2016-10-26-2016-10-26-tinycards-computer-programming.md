@@ -3,7 +3,7 @@ author: Olcay Bayram
 layout: post
 categories: Neler Yapıyorum?
 published: true
-title: 2016-10-26-tinycards-computer-programming
+title: Tinycards
 tags:
   - duolingo
   - tinycards

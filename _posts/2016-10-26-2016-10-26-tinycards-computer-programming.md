@@ -21,6 +21,8 @@ Decks;
 - HTTP Verbs & Status Codes
 - Git Commands
 
+<!--more-->
+
 ![tinycardsM.jpg]({{site.baseurl}}/img/tinycardsM.jpg)
 
 It is not focused on languages like the similar applications like [Memrise](https://www.memrise.com/). Memrise has various categories but they don't show them in the first place.

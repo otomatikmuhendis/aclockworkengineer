@@ -1,7 +1,7 @@
 ---
 author: Olcay Bayram
 layout: post
-categories: Neler Yapıyorum?
+categories: Projects
 published: true
 title: Tinycards
 tags:
@@ -10,7 +10,7 @@ tags:
   - git
   - http
   - rest
-tr: /2016/10/26/2016-10-26-tinycards-computer-programming/
+tr: /2016/10/26/tinycards-computer-programming/
 image: /img/tinycards_title.jpg
 ---
 [Tinycards](https://tinycards.duolingo.com/) is a new mobile application from the creators of [Duolingo](https://www.duolingo.com) which is led by [Luis von Ahn](https://www.ted.com/talks/luis_von_ahn_massive_scale_online_collaboration)

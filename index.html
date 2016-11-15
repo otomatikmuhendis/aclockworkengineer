@@ -13,13 +13,13 @@ subtitle: accelerating the mechanization
       <div class="featuredImg" style="background-image: url('{{ post.image | prepend: site.baseurl | replace: '//', '/' }}')"></div>
     </a>
     {% endif %} 
-	  <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="post-title">{{ post.title }}</h2></a>
+	  <a href="{{ post.url | prepend: site.baseurl }}"><h1 class="post-title">{{ post.title }}</h1></a>
 	
 	  {% if post.subtitle %}
     <a href="{{ post.url | prepend: site.baseurl }}">
-      <h3 class="post-subtitle">
+      <h2 class="post-subtitle">
         {{ post.subtitle }}
-      </h3>
+      </h2>
     </a>
 	  {% endif %}  
     

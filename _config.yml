@@ -142,7 +142,7 @@ prose:
           element: "text"
           label: "Image"
           help: "Featured image for index."
-          placeholder: "Image url."
+          placeholder: "/img/..."
           alterable: true
       - name: "categories"
         field:
@@ -150,12 +150,14 @@ prose:
           label: "Category"
           alterable: true
           options:
-            - name: 'Neler Yapıyorum?'
-              value: 'Neler Yapıyorum?'
-            - name: 'Yazılım'
-              value: 'Yazılım'
-            - name: 'IDE Tips'
-              value: 'IDE Tips'
+            - name: 'Database'
+              value: 'Database'
+            - name: 'Software'
+              value: 'Software'
+            - name: 'Projects'
+              value: 'Projects'
+            - name: 'Testing'
+              value: 'Testing'
       - name: "tags"
         field:
           element: "multiselect"

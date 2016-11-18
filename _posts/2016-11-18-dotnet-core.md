@@ -3,7 +3,7 @@ author: Olcay Bayram
 layout: post
 categories: Software
 published: true
-title: dotnet core
+title: .NET Core
 tr: /2016/11/18/dotnet-core/
 tags:
   - dotnet

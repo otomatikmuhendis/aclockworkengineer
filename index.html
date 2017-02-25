@@ -1,64 +1,75 @@
 ---
-layout: page
-title: A Clockwork Engineer
+layout: default
 subtitle: accelerating the mechanization
 ---
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    
-    {% if post.image and post.image != "" %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      <div class="featuredImg" style="background-image: url('{{ post.image | prepend: site.baseurl | replace: '//', '/' }}')"></div>
-    </a>
-    {% endif %} 
-	  <a href="{{ post.url | prepend: site.baseurl }}"><h1 class="post-title">{{ post.title }}</h1></a>
-	
-	  {% if post.subtitle %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      <h2 class="post-subtitle">
-        {{ post.subtitle }}
-      </h2>
-    </a>
-	  {% endif %}  
-    
+<div class="home">
+  <div class="post-list">
 
-    <p class="post-meta">
-      Published by {{ post.author }} on {{ post.date | date_to_long_string  }}. Written <a href="{{ post.url | prepend: site.url }}#disqus_thread">0 comments</a>.
-    </p>
-  
-    <div class="post-entry">
-      {{ post.excerpt }}
-	  <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Continue to read]</a>
-    </div>
-  
-   </article>
-  {% endfor %}
+    {% for post in paginator.posts %}
+
+    <article class="post_card post">
+      <header class="post_header">
+        <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
+        <time class="post_date">{{ post.date | date_to_long_string  }}</time>
+      </header>
+      <div class="post_excerpt">
+        <p>
+          {% if post.description %}
+          {{ post.description}}
+          {% else %}
+          {{ post.excerpt }}
+          {% endif %} 
+          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> Continue reading »  </a>
+        </p> 
+      </div>
+      <footer class="post_meta">
+
+
+        {% if post.location %}
+        <span class="author-location">
+          <div data-icon="ei-location"></div>
+          <a href=https://www.google.com/maps/place/{{post.location}}">{{ post.location }}</a>
+        </span>
+        {% endif %}
+        <!--
+        {% for category in post.categories %}
+        <a href="{{"/category/" | append: category | prepend: site.baseurl }}">
+          <data data-icon="ei-archive"></data>
+          {{category}}</a>
+        {% endfor %}
+        
+
+        
+        {% if post.author %}
+        <span class="author_meta">
+          <img src="{{site.baseurl}}/img/authors/{{post.author}}.jpg"></img>
+          <span>Olcay Bayram</span>
+        </span>
+        {% endif %}
+        -->
+
+
+        <!--<p class="readmore">
+          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
+        </p>-->
+      </footer>
+      <hr/>
+    </article>
+    {% endfor %}
+    {% if paginator.total_pages > 1 %}
+      
+      {% if paginator.next_page %}
+      <div class="pagination older-post">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><data data-icon="ei-arrow-right"></data> Old Entries  </a>
+      </div>
+      {% endif %}
+      {% if paginator.previous_page %}
+        <div class="pagination newer-post">
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">  New Entries <data data-icon="ei-arrow-left"></data></a>
+        </div>
+      {% endif %}
+        
+      {% endif %}
+  </div>
 </div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; NEW ENTRIES</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">OLD ENTRIES &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-1347000257232721"
-     data-ad-slot="5429939799"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-<script id="dsq-count-scr" src="//otomatikmuhendis.disqus.com/count.js" async></script>

@@ -1,88 +1,54 @@
 ---
 layout: default
 ---
-<div class="row">
-  <div class="col-md-10 col-md-offset-1">
-  <div class="post">
-  <header class="header-post">
-        <div class="post-heading">
-          {% if page.image and page.image != "" %}
-            <div class="featuredImg" style="background-image: url('{{ page.image | prepend: site.baseurl | replace: '//', '/' }}')"></div>
-          {% endif %} 
-          <h1>{{ page.title }}</h1>
-          {% if page.subtitle %}
-          <h2 class="post-subheading">{{ page.subtitle }}</h2>
-          {% endif %}
-          <span class="post-meta">Published by {{ page.author }} on {{ page.date | date_to_long_string  }}.
-          <br/>
-          {% if page.tags %}
-          <span class="glyphicon glyphicon-tags post-tag" title="Etiketler"></span>  {% include post-tags.html %}
-          {% endif %}
-          {% if page.categories %}
-          <span class="glyphicon glyphicon-folder-open post-tag" title="Kategori"></span>  {{ page.categories | join: ", " }}
-          {% endif %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-          </span>
-        </div>
+  <header class="artilce_header">
+    {% if page.image and page.image != "" %}
+      <img src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}"/>
+    {% endif %} 
+    <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="artilce_meta">
+      Published {% if page.author %}by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date_to_long_string  }}
+      </time></p>  
   </header>
 
-  <article>
-      {{ content }}
-      <br/>
-      <div style="float:right;">
-        <div class="socialPanel">
-          <div class="fb-like" data-href="https://www.facebook.com/{{site.author.facebook}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-        </div>
-        <div class="socialPanel">
-          <div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"></div>
-        </div>
-        <div class="socialPanel"><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_EN</script><script type="IN/Share" data-url="{{site.url}}{{page.url}}" data-counter="right"></script></div>
-      </div>
-  </article>
-
+  <div class="article-content" itemprop="articleBody">
+    {{ page.content }}
   </div>
-</div>
-</div>
-{% if page.author %}
-<div class="footer-post">
-  <div class="row post-author-row">
-    {% assign author = site.data.authors[page.author] %}
-    <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1 post-author">
-      <img src="{{ author.avatar | prepend: "/img" }}" title="{{ page.author }}" alt="{{ page.author }}" class="post-author-avatar" />
-    </div>
-    <div class="col-lg-6 col-md-8">
-      <div class="post-heading">
-        <h4 class="post-subheading">About author</h4>
-        <div class="post-meta">
-          <a rel="author" href="{{ author.url }}" title="{{ page.author }}" data-proofer-ignore> {{ page.author }}</a> {{ author.description }}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
 
-<div class="row">
-  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-    <ul class="pager blog-pager">
+  <footer class="article-footer">
+    {% if page.tags %}
+        <data data-icon="ei-tag"></data>   {% include post-tags.html %}
+      {% endif %}
+      {% if page.categories %}
+      <data data-icon="ei-archive"></data> {{ page.categories | join: ", " }}
+      {% endif %}
+    <hr/>
+  {% include share.html %}
+
+  <hr/>
+
+  {% include author.html %}
+
+<hr/>
+
+
       {% if page.previous.url %}
-      <li class="previous">
-        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; PREVIOUS</a>
-      </li>
+      <div class="pagination older-post">
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.previous.title}}"><data data-icon="ei-arrow-right"></data>Previous Entry</a>
+      </div>
       {% endif %}
       {% if page.next.url %}
-      <li class="next">
-        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">NEXT &rarr;</a>
-      </li>
+      <div class="pagination newer-post">
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{page.next.title}}">Next Entry<data data-icon="ei-arrow-left"></data></a>
+      </div>
+      {% else %}
+        <div class="pagination newer-post">&nbsp;</div>
       {% endif %}
-    </ul>
-  </div>
-</div>
+  </footer>
 
-{% if page.comments %}
-<div class="row disqus-comments">
-  <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-    {% include disqus.html %}
-  </div>
-</div>
-{% endif %}
+  {% include dq.html %}
+
+</article>

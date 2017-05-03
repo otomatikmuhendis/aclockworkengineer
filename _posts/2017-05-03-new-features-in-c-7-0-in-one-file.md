@@ -6,6 +6,8 @@ published: true
 title: 'New Features in C# 7.0 in One File'
 image: /img/c-sharp-logo.png
 tr: /2017/05/02/c-sharp-7-ile-gelen-yeni-yetenekler/
+tags:
+  - 'C#'
 ---
 C# now has some new features with the release of Visual Studio 2017. Those features focused on code simplification, performance and data consumption. I prepared a simple console application to show them in one file.
 

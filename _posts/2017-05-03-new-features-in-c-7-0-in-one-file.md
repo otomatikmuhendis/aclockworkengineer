@@ -3,7 +3,7 @@ author: Olcay Bayram
 layout: post
 categories: Software
 published: true
-title: 'New Features in C# 7.0 in One File'
+title: 'C# 7.0 New Features in One File'
 image: /img/c-sharp-logo.png
 tr: /2017/05/02/c-sharp-7-ile-gelen-yeni-yetenekler/
 tags:

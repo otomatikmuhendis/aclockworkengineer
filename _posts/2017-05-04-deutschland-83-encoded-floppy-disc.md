@@ -7,6 +7,7 @@ title: Deutschland 83 Encoded Floppy Disc
 image: /img/deutschland_83_matris.png
 tags:
   - movie
+tr: /2017/05/04/deutschland-83-sifreli-disket/
 ---
 [Deutschland 83](http://www.sundance.tv/series/deutschland-83) is a series about the political conflicts between West and East germany. In the third episode which is called “Atlantic Lion” of the first season, the underdeveloped technology of East Germany doesn't let the officers to read the floppy disc of a NATO official.
 

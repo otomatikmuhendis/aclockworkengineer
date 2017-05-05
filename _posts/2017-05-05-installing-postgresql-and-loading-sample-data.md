@@ -45,4 +45,4 @@ Now we can display the list of the tables with the command below;
 
 `dvdrental=# \dt`
 
-If you have installed it succesfully, continue with [Connect to Postgres with EF Core]()
+If you have installed it succesfully, continue with [Connect to Postgres with EF Core]({{site.baseurl}}/2017/05/05/installing-postgresql-and-loading-sample-data/)

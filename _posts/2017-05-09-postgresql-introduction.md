@@ -84,6 +84,8 @@ Create a view for your queries. I think biggest difference between SQL databases
 	select * from membership.users where status = 'pending';
 
 	select * from membership.pending_users limit 10;
+    
+![postgres_tsvector.PNG]({{site.baseurl}}/img/postgres_tsvector.PNG)
 
 Do not forget to clean your test environment. Place this block at the beginning to prevent conflicts.
 

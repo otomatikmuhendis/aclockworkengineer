@@ -46,3 +46,11 @@ Now we can display the list of the tables with the command below;
 `dvdrental=# \dt`
 
 If you have installed it succesfully, continue with [Connect to Postgres with EF Core]({{site.baseurl}}/2017/05/05/installing-postgresql-and-loading-sample-data/)
+
+Source:
+
+- [Postgres for .NET Developers](https://app.pluralsight.com/library/courses/postgres-dotnet-developers/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/current/static/)
+- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
+- [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/)
+

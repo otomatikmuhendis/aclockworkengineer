@@ -8,6 +8,7 @@ layout: default
       <img src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}"/>
     {% endif %} 
     <h1 class="artilce_title" itemprop="name headline">{{ page.title }}</h1>
+    {% if page.subtitle %}<h3>{{ page.subtitle }}</h3>{% endif %}
     <p class="artilce_meta">
       Published {% if page.author %}by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date_to_long_string  }}
@@ -17,6 +18,8 @@ layout: default
   <div class="article-content" itemprop="articleBody">
     {{ page.content }}
   </div>
+
+  {% include series.html %}
 
   <footer class="article-footer">
     {% if page.tags %}
@@ -33,7 +36,6 @@ layout: default
   {% include author.html %}
 
 <hr/>
-
 
       {% if page.previous.url %}
       <div class="pagination older-post">

@@ -2,14 +2,12 @@
 author: Olcay Bayram
 layout: post
 categories: Database
-published: false
+published: true
 title: PostgreSQL Advanced
 subtitle: Postgres Notes of a .NET Developer
 tags:
   - PostgreSQL
 ---
-### Postgres Notes of a .NET Developer
-
 This post is continuation of the series. If you do not have Postgres on your machine or sample data, you can read [Installing PostgreSQL and Loading Sample Data]({{site.baseurl}}/2017/05/05/installing-postgresql-and-loading-sample-data/) post first.
 
 There are functions like `date_gt` to compare date types.

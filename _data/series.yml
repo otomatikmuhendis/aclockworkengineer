@@ -1,0 +1,15 @@
+postgres:
+- name: Installing PostgreSQL and Loading Sample Data
+  href: /2017/05/05/installing-postgresql-and-loading-sample-data/
+
+- name: Connect to Postgres with EF Core
+  href: /2017/05/05/connect-to-postgres-with-ef-core/
+
+- name: PostgreSQL Introduction
+  href: /2017/05/09/postgresql-introduction/
+
+- name: PostgreSQL Advanced
+  href: /2017/05/09/postgresql-advanced/
+
+- name: PostgreSQL as NoSQL
+  href: /2017/05/09/postgresql-as-nosql/

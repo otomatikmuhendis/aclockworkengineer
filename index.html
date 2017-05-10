@@ -10,7 +10,7 @@ subtitle: accelerating the mechanization
 
     <article class="post_card post">
       <header class="post_header">
-        <h2 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h2>
+        <h1 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h1>
         <time class="post_date">{{ post.date | date_to_long_string  }}</time>
       </header>
       <div class="post_excerpt">
@@ -20,7 +20,7 @@ subtitle: accelerating the mechanization
           {% else %}
           {{ post.excerpt }}
           {% endif %} 
-          <a class="read-more" href="{{ post.url | prepend: site.baseurl }}"> Continue reading »  </a>
+          
         </p> 
       </div>
       <footer class="post_meta">
@@ -50,9 +50,9 @@ subtitle: accelerating the mechanization
         -->
 
 
-        <!--<p class="readmore">
-          <a href=""><data data-icon="ei-arrow-right"></data>Read this article  </a>
-        </p>-->
+        <p class="readmore">
+          <strong><a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading »</a></strong>
+        </p>
       </footer>
       <hr/>
     </article>

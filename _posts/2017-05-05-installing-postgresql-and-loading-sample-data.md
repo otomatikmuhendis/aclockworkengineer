@@ -8,8 +8,6 @@ subtitle: Postgres Notes of a .NET Developer
 tags:
   - PostgreSQL
 ---
-### Postgres Notes of a .NET Developer
-
 As an experienced and certified .NET Developer, Postgres made my attention. I will tell about its reasons in another post.
 
 I will write my notes about Postgres in this series. We will start with installing and loading sample data to our database in this post and we will have a result like below at the end.

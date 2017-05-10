@@ -7,6 +7,7 @@ title: Installing PostgreSQL and Loading Sample Data
 subtitle: Postgres Notes of a .NET Developer
 tags:
   - PostgreSQL
+serieName: postgres
 ---
 As an experienced and certified .NET Developer, Postgres made my attention. I will tell about its reasons in another post.
 

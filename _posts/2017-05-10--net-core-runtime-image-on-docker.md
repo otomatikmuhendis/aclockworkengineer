@@ -2,10 +2,12 @@
 author: Olcay Bayram
 layout: post
 categories: Software
-published: false
+published: true
 title: .NET Core Runtime Image on Docker
 tags:
   - docker
+  - dotnet
+  - .NET Core
 ---
 Let's try dotnet sample application within a docker container.
 

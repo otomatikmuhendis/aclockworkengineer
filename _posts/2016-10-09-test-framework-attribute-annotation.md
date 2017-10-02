@@ -4,18 +4,20 @@ layout: post
 title: Attributes and Annotations of Testing Frameworks
 tr: /2016/10/09/test-framework-attribute-annotation/
 categories: Testing
-tags: 
+tags:
   - test
   - nunit
   - xunit
   - mstest
   - junit
 published: true
-subtitle: Frequently used attribute and annotations in various testing frameworks 
+subtitle: Frequently used attribute and annotations in various testing frameworks
 ---
 It is called attributes in the .NET environment and annotations in Java. We use them to declare information about methods, types, properties and so on.
 
-We will discuss about frequently used ones to run test scenarious properly. You would find comparisons of [NUnit](https://github.com/nunit/docs/wiki/Attributes), [MSTest](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.classinitializeattribute(v=vs.140).aspx), [xUnit.net](https://xunit.github.io/) and [JUnit](https://www.tutorialspoint.com/junit/junit_using_assertion.htm) testing frameworks down below.
+We will discuss about frequently used ones to run test scenarious properly. You would find comparisons of [NUnit](https://github.com/nunit/docs/wiki/Attributes), [MSTest](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.classinitializeattribute.aspx), [xUnit.net](https://xunit.github.io/) and [JUnit](http://junit.org) testing frameworks down below.
+
+You could find very comprehensive tutorials on [Guru99](https://www.guru99.com/junit-annotations-api.html) website.
 
 |NUnit|MSTest|xUnit.net|JUnit|Description|
 |---|---|---|---|---|

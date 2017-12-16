@@ -17,9 +17,13 @@ A craft is a profession that requires particular skills and knowledge of skilled
 ### Craftsmanship
 Craftsmanship is our journey and we can define our journey like;
 
+<!--more-->
+
 Once an **apprentice** of a craft had finished her apprenticeship, 
 she would become a **journeyman** searching for a place to set up her own shop and make a living.
 After she set up her own shop, she could then call herself a **master** of her craft.
+
+## Manifesto for Software Craftsmanship
 
 ### Well-Crafted Software
 It is about building a culture for passionate, disciplined and motivated people who aims to write well-crafted software and continuously deliver value.
@@ -28,7 +32,7 @@ It is about building a culture for passionate, disciplined and motivated people 
 
 **Master work == Well-crafted**
 
-Work done can seize the day for any startup but if you want to erupt your structure on good foundations than you must master your work in the same time interval you make your work done.
+Work done can seize the day for any startup but if you want to erupt your structure on good foundations then you must master your work in the same time interval you make your work done.
 
 To master your work be responsible of...
 
@@ -42,11 +46,23 @@ To master your work be responsible of...
 - Operations
 - Practices
 
+### Steadily Adding Value
+It is about creating an environment where software development is more predictable, gives better results, costs less and builds trust. Think about the importance of the estimations in SCRUM refinements.
+
+### A Community Of Professionals
+There must be at least one master in every team. You could be a master after learning from many masters.
+
+You are a master only if you have apprentices. The apprentice is the one who has willingness to learn at all times.
+
+It is not about being a master, be apprentice and become master.
+
+The master sends her apprentice to the other teams like in the medieval Europe. Her apprentice becomes a journeyman to learn the way of the other masters and in the end, the journeyman builds a new team to become a master. And you get a new team filled with the culture of the company.
+
+We cannot pass the field of psychology here, if you think that you are already a master then it is good to keep in mind the Dunning-Kruger effect.
+
+**Dunning-Kruger Effect**: It is a cognitive bias wherein people of low ability suffer from illusory superiority, mistakenly assessing their cognitive ability as greater than it is.
 
 
 
 
 
-
-
-<!--more-->

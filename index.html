@@ -10,7 +10,11 @@ subtitle: accelerating the mechanization
 
     <article class="post_card post">
       <header class="post_header">
+          {% if post.image and post.image != "" %}
+            <img src="{{ post.image | prepend: site.baseurl | replace: '//', '/' }}"/>
+          {% endif %}
         <h1 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h1>
+        {% if post.subtitle %}<h3>{{ post.subtitle }}</h3>{% endif %}
         <time class="post_date">{{ post.date | date_to_long_string  }}</time>
       </header>
       <div class="post_excerpt">

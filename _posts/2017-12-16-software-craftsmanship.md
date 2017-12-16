@@ -1,15 +1,22 @@
 ---
 author: Olcay Bayram
 layout: post
-categories: Database
-published: false
+categories: Software
+published: true
 title: Software Craftsmanship
+image: /img/fireskystudios-com-2236.jpg
+subtitle: Raising the bar.
+tags:
+  - manifesto
+  - agile
+  - software
 ---
 _For all those companies which are in the middle of agile transformation or transformed already._
 
 As software developers, we have another manifesto that raises the bar a little bit higher over [Agile Software Development](http://agilemanifesto.org/), that is called [Software Craftsmanship](http://manifesto.softwarecraftsmanship.org/) and signed by same people who wrote Agile manifesto.
 
 We should start from definitions to understand anything so let's examine Software Craftsmanship word by word.
+
 
 ### Craft
 A craft is a profession that requires particular skills and knowledge of skilled work. Software Development is our profession so it is our craft.
@@ -61,6 +68,22 @@ The master sends her apprentice to the other teams like in the medieval Europe. 
 We cannot pass the field of psychology here, if you think that you are already a master then it is good to keep in mind the Dunning-Kruger effect.
 
 **Dunning-Kruger Effect**: It is a cognitive bias wherein people of low ability suffer from illusory superiority, mistakenly assessing their cognitive ability as greater than it is.
+
+### Productive Partnership
+It is about making the users a part of production.
+If you dont think them as customer who checks your work and pays your salary, you can work with them like your partner.
+Like in the pair programming; if I do pair programming with one of my team mate than I can easily review her code and she would not feel any awkwardness to be reviewed.
+
+## Sources
+The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt
+
+Software Craftsmanship: The New Imperative by Pete McBreen
+
+Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman by Dave Hoover
+
+Mastery: The Keys to Success and Long-Term Fulfillment by George Leonard
+
+The Craftsman by Richard Sennett
 
 
 

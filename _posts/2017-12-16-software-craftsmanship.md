@@ -74,6 +74,12 @@ It is about making the users a part of production.
 If you dont think them as customer who checks your work and pays your salary, you can work with them like your partner.
 Like in the pair programming; if I do pair programming with one of my team mate than I can easily review her code and she would not feel any awkwardness to be reviewed.
 
+## Presentation
+I also prepared a presentation and told about this to my colleagues.
+
+<iframe src="https://docs.google.com/presentation/d/1DJwW-4BNfrZDLXND_VWTWsIvpTerN40lhBvj6zrR_uY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="750" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
 ## Sources
 The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt
 
@@ -85,7 +91,7 @@ Mastery: The Keys to Success and Long-Term Fulfillment by George Leonard
 
 The Craftsman by Richard Sennett
 
-
+Photo by [fireskystudios.com](https://unsplash.com/photos/o14nNEbLa-s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
 
 
 

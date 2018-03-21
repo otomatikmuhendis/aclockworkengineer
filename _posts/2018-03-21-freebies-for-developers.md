@@ -2,7 +2,7 @@
 author: Olcay Bayram
 layout: post
 categories: Software
-published: false
+published: true
 title: Freebies for Developers
 tr: /2018/03/18/ucretsiz-hizmetler/
 tags:

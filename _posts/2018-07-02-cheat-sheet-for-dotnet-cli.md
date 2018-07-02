@@ -18,8 +18,6 @@ You can find it on good old [Cheatography](https://www.cheatography.com/oba/chea
 
 [![otomatik muhendis dotnet cli cheat sheet]({{site.baseurl}}/img/oba_dotnet-cli-1.png)]({{site.baseurl}}/img/oba_dotnet-cli-1.png)
 
-Source: [https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore21]
+Source: [Microsoft Docs - dotnet command - .NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore21)
 
-PS: When I was preparing this cheat sheet I found a miss typing in the Microsoft documents, just fixed it and my change is on the way to production with Sprint 138.
-
-[https://github.com/dotnet/docs/pull/6237]
+PS: While I was preparing this cheat sheet, I found a miss typing in the Microsoft documents, just fixed it and [my change](https://github.com/dotnet/docs/pull/6237) is on the way to production with Sprint 138.

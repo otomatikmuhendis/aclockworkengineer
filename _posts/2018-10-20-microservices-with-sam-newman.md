@@ -8,18 +8,18 @@ image: /img/MicroservicesWorkshop.jpg
 tags:
   - microservices
 ---
-Last week, I was lucky to have a workshop from Sam Newman about microservices. I have his [Building Microservices](https://www.bookdepository.com/Building-Microservices-Sam-Newman/9781491950357) book and he signed it with a funny quote for me.
+Last week, I was lucky to have a workshop from [Sam Newman](https://samnewman.io/) about microservices. I have his [Building Microservices](https://www.bookdepository.com/Building-Microservices-Sam-Newman/9781491950357) book and he signed it with a funny quote for me.
 
 The best thing about the workshop was that it did not start with all that hatred against to monolith systems. If you are building something from scratch you can still build it as a monolith system, it is not that bad.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) <a href="https://twitter.com/honest_update/status/651897353889259520?ref_src=twsrc%5Etfw">October 7, 2015</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I have worked in a lot of places, real big and real bad ones though and that gave me a lot of experience. When I read books about how to deal with legacy stuff or killing that monolith giant, the worst case scenarios were not even as bad as what I have seen. Still I can solve the stuff with the knowledge in the books but I could not use it exactly as it is. So it is always different in the book and in the real-world. The book cannot help you to solve your specific situation and you help yourself by hiring a consultant at the end.
 
 <!--more-->
 
 Sam Newman is one of those consultants, so he knows really ugly stuff. He shared his experience with us in this compact 2-day workshop. We even did an event storming session.
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) <a href="https://twitter.com/honest_update/status/651897353889259520?ref_src=twsrc%5Etfw">October 7, 2015</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Notes from the workshop;
 Log and monitor everything. If you are refactoring, you need to know what you are trading off and is it going to pay off.

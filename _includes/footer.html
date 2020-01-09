@@ -18,12 +18,7 @@
 
     <div class="footer right column one-third">
       <section class="small-font">
-        {% if site.author.github and site.footer-links-active.github %}
-        {% include icon-github.html username=site.author.github %}
-        {% endif %}
-        {% if site.author.twitter and site.footer-links-active.twitter %}
-        {% include icon-twitter.html username=site.author.twitter %}
-        {% endif %}
+        {% include social-media.html %}
       </section>
     </div>
   </div>

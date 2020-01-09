@@ -1,0 +1,10 @@
+<ul class="page-link">
+    <li><strong>Learning</strong></li>
+    {% for learning in site.data.learning %}
+        <li>
+            <a href="{{ learning.href }}">
+            {{ learning.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

@@ -41,10 +41,10 @@ Yes, [the cicuit breaker policy](https://feedback.azure.com/forums/248703-api-ma
 ## Setup an API Management service
 
 1. Sign into the [Azure portal](https://portal.azure.com/#create/hub).
-1. Create a resource through `Integration`, and then `API Management`.
+1. Create a resource through __Integration__, and then __API Management__.
 1. Give a globally unique name to your resource.
-1. Select `Consumption (99.9SLA, %)` as the pricing tier because this serverless plan is much faster to create for an ad-hoc testing.
-1. Click `Create`.
+1. Select __Consumption (99.9SLA, %)__ as the pricing tier because this serverless plan is much faster to create for an ad-hoc testing.
+1. Click __Create__.
 1. Deployment will start and it may take several minutes.
 
 When the deployment is complete you will get a notification email to the address you provided as an administrator. Once it is deployed we import our first API.
@@ -52,13 +52,13 @@ When the deployment is complete you will get a notification email to the address
 ## Import an API
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
-1. Go to `All Resources`, and then select your API gateway.
-1. Under `API Management`, click `APIs`
+1. Go to __All Resources__, and then select your API gateway.
+1. Under __API Management__, click __APIs__
 1. Choose your specification. If you are using [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) library in your API that means you already have [OpenAPI specification](https://swagger.io/specification/).
-1. On the `Create from OpenAPI specification` page, paste the swagger JSON URL of your API. The other fields will be populated according to your API.
-1. Click `Create`.
+1. On the __Create from OpenAPI specification__ page, paste the swagger JSON URL of your API. The other fields will be populated according to your API.
+1. Click __Create__.
 
-Now, you can test the gateway through the `Test` tab on the API details page.
+Now, you can test the gateway through the __Test__ tab on the API details page.
 
 # Subscriptions
 
@@ -72,10 +72,10 @@ The default header name is `Ocp-Apim-Subscription-Key`, and the default query st
 
 In Azure API Management, administrators can use policies to alter the behavior of APIs through configuration. Policies execute at four different times:
 
-- Inbound; These policies execute when a request is received from a client.
-- Backend; These policies execute before a request is forwarded to a managed API.
-- Outbound; These policies execute before a response is sent to a client.
-- On-Error; These policies execute when an exception is raised.
+- __Inbound__: These policies execute when a request is received from a client.
+- __Backend__: These policies execute before a request is forwarded to a managed API.
+- __Outbound__: These policies execute before a response is sent to a client.
+- __On-Error__: These policies execute when an exception is raised.
 
 There is one more scope in addition to subscription scopes for policies and it is operation policy scope. We can determine order of the policies. If we place `<base />` tag before a policy that means higher policies will be applied first and vice versa.
 
@@ -98,7 +98,9 @@ By caching the compiled responses we can reduce processing time in our APIs and 
 <policies>
     <inbound>
         <base />
-        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none" must-revalidate="true" caching-type="internal">
+        <cache-lookup vary-by-developer="false" vary-by-developer-groups="false"
+        downstream-caching-type="none"
+        must-revalidate="true" caching-type="internal">
             <vary-by-query-parameter>id</vary-by-query-parameter>
         </cache-lookup>
     </inbound>
@@ -122,13 +124,13 @@ As you can already notice, the caching type for this example is internal. We can
 ## Add an external cache
 
 1. Create an Azure Cache for Redis resource.
-1. Go to your API Management service and click `External cache` under `Settings` and then click `+ Add`.
+1. Go to your API Management service and click __External cache__ under __Settings__ and then click __+ Add__.
 1. Choose your Redis cache instance and a location to use from. The other fields will be populated.
-1. Click `Save`.
-1. Go to `APIs` under `API Management` an then select the API and click the pencil next to the `cache-lookup` to edit the policy.
+1. Click __Save__.
+1. Go to __APIs__ under __API Management__ an then select the API and click the pencil next to the __cache-lookup__ to edit the policy.
 1. Change caching type from __Internal__ to __External__
 
-You can test your API in the `Test` tab to see if it is giving unchanged results.
+You can test your API in the __Test__ tab to see if it is giving unchanged results.
 
 ## Remove unnecessary info from response header
 
@@ -171,14 +173,15 @@ If we place the `rate-limit-by-key` tag inside the `inbound` element, it will li
 
 If we want to use certificate authentication in our API gateway, we can validate it by an inbound policy.
 
-1. Under `Settings`, click `Custom domains` in your API Management service.
-1. Toggle __Yes__ for the `Request client certificate` option, and then click __Save__.
+1. Under __Settings__, click __Custom domains__ in your API Management service.
+1. Toggle __Yes__ for the __Request client certificate__ option, and then click __Save__.
 1. Replace the `<inbound>` node of the policy file with the following XML, while replacing `desired-thumbprint` part with your certificate thumbprint;
 
 ```xml
 <inbound>
     <choose>
-        <when condition="@(context.Request.Certificate == null || context.Request.Certificate.Thumbprint != "desired-thumbprint")" >
+        <when condition="@(context.Request.Certificate == null || 
+        context.Request.Certificate.Thumbprint != "desired-thumbprint")" >
             <return-response>
                 <set-status code="403" reason="Invalid client certificate" />
             </return-response>

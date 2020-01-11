@@ -32,9 +32,9 @@ It is a native Azure SaaS which brings nice pros;
 - Built-in caching
 - Network tracing
 
-## Is there any trade-offs?
+## Is there any trade-off?
 
-Yes, [the cicuit breaker policy](https://feedback.azure.com/forums/248703-api-management/suggestions/15527100-circuit-breaker-policy) is not implemented yet. You can build your own API gateway using third-party libraries like [Ocelot](https://github.com/ThreeMammals/Ocelot).
+Yes, [the cicuit breaker policy](https://feedback.azure.com/forums/248703-api-management/suggestions/15527100-circuit-breaker-policy) is not implemented yet. You can build your own API gateway with a circuit breaker using third-party libraries like [Ocelot](https://github.com/ThreeMammals/Ocelot) but does it worth to go down to a PaaS instead of a SaaS?
 
 <!--more-->
 

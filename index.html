@@ -9,7 +9,7 @@ subtitle: accelerating the mechanization
     <article class="post_card post">
       <header class="post_header">
         {% if post.image and post.image != "" %}
-          <img src="{{ post.image | prepend: site.baseurl | replace: '//', '/' }}" />
+        <img src="{{ post.image | prepend: site.baseurl | replace: '//', '/' }}" />
         {% endif %}
         <h1 class="post_title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h1>
         {% if post.subtitle %}<h3>{{ post.subtitle }}</h3>{% endif %}
@@ -18,9 +18,9 @@ subtitle: accelerating the mechanization
       <div class="post_excerpt">
         <p>
           {% if post.description %}
-            {{ post.description}}
+          {{ post.description}}
           {% else %}
-            {{ post.excerpt }}
+          {{ post.excerpt }}
           {% endif %}
         </p>
       </div>
@@ -28,27 +28,29 @@ subtitle: accelerating the mechanization
         {% if post.location %}
         <span class="author-location">
           <div data-icon="ei-location"></div>
-          <a href=https://www.google.com/maps/place/{{post.location}}">{{ post.location }} </a> </span> {% endif %} <p
-            class="readmore">
-            <strong><a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading »</a></strong>
-            </p>
+          <a href="https://www.google.com/maps/place/{{post.location}}">{{ post.location }} </a>
+        </span>
+        {% endif %}
+        <p class="readmore">
+          <strong><a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Continue reading »</a></strong>
+        </p>
       </footer>
       <hr />
     </article>
     {% endfor %}
     {% if paginator.total_pages > 1 %}
-      {% if paginator.next_page %}
-        <div class="pagination older-post">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><data
-              data-icon="ei-arrow-right"></data> Old Entries </a>
-        </div>
-      {% endif %}
-      {% if paginator.previous_page %}
-        <div class="pagination newer-post">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> New Entries <data
-              data-icon="ei-arrow-left"></data></a>
-        </div>
-      {% endif %}
+    {% if paginator.next_page %}
+    <div class="pagination older-post">
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><data
+          data-icon="ei-arrow-right"></data> Old Entries </a>
+    </div>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <div class="pagination newer-post">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> New Entries <data
+          data-icon="ei-arrow-left"></data></a>
+    </div>
+    {% endif %}
     {% endif %}
   </div>
 </div>

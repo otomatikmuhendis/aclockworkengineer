@@ -169,6 +169,5 @@ prose:
           help: "Check to publish post, uncheck to hide."
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
+  - github-pages
+  - html-proofer

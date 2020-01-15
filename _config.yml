@@ -85,6 +85,7 @@ defaults:
       path: "" # all files
     values:
       layout: "default"
+      image: /assets/icon-avatar.svg
 
 # Exclude these files from production site
 exclude:

@@ -5,7 +5,6 @@ categories: Testing
 published: true
 title: Isolating Integration Test Data
 tr: /2017/01/09/isolating-integration-test-data/
-serieName: tidyTestEnv
 tags:
   - NUnit
   - TransactionScope
@@ -21,7 +20,7 @@ On the other hand, we can use good old [TransactionScope](https://msdn.microsoft
 
 In the `BeforeTest` method, it creates a new `TransactionScope`. In the `AfterTest` method, instead of calling `Complete()` function of the transaction scope to commit all the changes to the database, we call `Dispose()` to rollback the specific transaction.
 
-{% highlight csharp %}
+```csharp
 using NUnit.Framework;
 using System;
 using System.Transactions;
@@ -48,12 +47,12 @@ namespace OtomatikMuhendis.IntegrationTests
     }
   }
 }
-{% endhighlight %}
+```
 
 We can apply the attrribute to the test cases that we want to isolate.
 
-{% highlight csharp %}
+```csharp
 [Test, Isolated]
 public void Update_WhenCalled_ShouldUpdateTheGivenItem()
 { /* ... */ }
-{% endhighlight %}
+```

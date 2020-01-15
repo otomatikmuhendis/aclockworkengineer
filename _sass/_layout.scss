@@ -284,8 +284,13 @@ p.readmore {
 
 }
 
-.artilce_header img, .post_header img {
-  margin-bottom: 20px;
+.article_header img, .post_header img {
+  border: 1px solid #E1E1E1;
+  margin: 0px 0px 20px -1px;
+}
+
+.article_header img:hover, .post_header img:hover {
+  border-color: darkgray;
 }
 
 .article-next {

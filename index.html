@@ -9,7 +9,7 @@ subtitle: accelerating the mechanization
     <article class="post_card post">
       <header class="post_header">
         {% if post.image and post.image != "" %}
-        <a href="{{ post.url | prepend: site.baseurl }}">
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title}}">
           <img alt="{{ post.title}}" src="{{ post.image | prepend: site.baseurl | replace: '//', '/' }}" />
         </a>
         {% endif %}

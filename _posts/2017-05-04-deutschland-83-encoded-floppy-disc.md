@@ -13,7 +13,7 @@ tr: /2017/05/04/deutschland-83-sifreli-disket/
 
 ![deutschland_83_ibm_typing.png]({{site.baseurl}}/img/deutschland_83_ibm_typing.png)
 
-They finally acquire an [IBM Model 5155](http://old-computers.com/museum/computer.asp?st=1&c=446) computer from the West but they find the disc is encoded. When they insert the disc, it starts to print out number with 5 digits as 6 columns and unknown rows of matris. After that, they start to decode it.
+They finally acquire an [IBM Model 5155](http://oldcomputers.net/ibm5155.html) computer from the West but they find the disc is encoded. When they insert the disc, it starts to print out number with 5 digits as 6 columns and unknown rows of matris. After that, they start to decode it.
 
 On the next scene, we see a code block which generates random numbers on the screen with 3 _for_ loops. As we can see from that, the number of rows is 64 and the matris is all random. Also there are some mistyped letters with `Syntax error` below.
 

@@ -34,11 +34,7 @@ subtitle: Curated list of blogs of software developers
 
 <!--more-->
 
-[Kötü Yazılımcı Olmamaya Dair Her Şey](http://www.ahmeta.org/)
-
 [Muhammet Dilmaç](https://muhammetdilmac.com.tr/)
-
-[Ali Süleyman Topuz](http://blog.alisuleymantopuz.com/)
 
 [Oguz Ozkeroglu - Web Günlüğü](http://www.oguzozkeroglu.com/)
 

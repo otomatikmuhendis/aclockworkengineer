@@ -9,7 +9,7 @@ tags:
 subtitle: Postgres Notes of a .NET Developer
 serieName: postgres
 ---
-This post is continuation of the series. If you do not have Postgres on your machine or sample data, you can read [Installing PostgreSQL and Loading Sample Data](http://en.otomatikmuhendis.com/2017/05/05/installing-postgresql-and-loading-sample-data/) post first.
+This post is continuation of the series. If you do not have Postgres on your machine or sample data, you can read [Installing PostgreSQL and Loading Sample Data](http://olcay.dev/2017/05/05/installing-postgresql-and-loading-sample-data/) post first.
 
 First of all, we have to create a schema to manage easily our domain. It is in best practices, do not let `dbo` schema to seize your database. I use [Navicat](https://www.navicat.com/products/navicat-for-postgresql) for my [DDL](http://www.w3schools.in/mysql/ddl-dml-dcl/) operations but there are free softwares like [pgAdmin](https://www.pgadmin.org/).
 

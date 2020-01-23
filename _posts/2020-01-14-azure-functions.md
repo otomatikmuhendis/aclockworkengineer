@@ -2,7 +2,7 @@
 author: Olcay Bayram
 layout: post
 categories: Azure
-published: false
+published: true
 title: Azure Functions
 image: /img/AzureFunctionCover.png
 ogimage: /img/AzureFunctionOgImage.png

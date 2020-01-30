@@ -13,3 +13,13 @@ postgres:
 
 - name: PostgreSQL as NoSQL
   href: /2017/05/09/postgresql-as-nosql/
+  
+serverless:
+- name: Architect Azure API Management service
+  href: /2020/01/10/architect-azure-api-management-service/
+
+- name: Azure Functions
+  href: /2020/01/14/azure-functions/
+
+- name: Azure Durable Functions
+  href: /2020/01/30/azure-durable-functions/

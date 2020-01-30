@@ -4,6 +4,7 @@ layout: post
 categories: Azure
 published: true
 title: Azure Durable Functions
+subtitle: Architect serverless solutions in Azure
 image: /img/AzureDurableFunctionCover.png
 tags:
   - cloud

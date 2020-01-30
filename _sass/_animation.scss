@@ -1,0 +1,35 @@
+﻿@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(60deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(60deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(60deg); }
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(60deg);
+  }
+}
+
+.site-header {
+
+  .avatar-img {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1s;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1s;
+    
+    animation-name: spin;
+    animation-duration: 1s;
+  }
+}

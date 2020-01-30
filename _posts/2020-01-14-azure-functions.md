@@ -4,12 +4,14 @@ layout: post
 categories: Azure
 published: true
 title: Azure Functions
+subtitle: Architect serverless solutions in Azure
 image: /img/AzureFunctionCover.png
 ogimage: /img/AzureFunctionOgImage.png
 tags:
   - cloud
   - azure
   - function
+serieName: serverless
 ---
 
 Serverless, as the name suggests, is computing without managing a server. You would not care about any server specification to process your data. The server should already be provided by a cloud platform as a PaaS (platform as a service) or as a FaaS (function as a service). The two common approaches on Azure are Logic Apps and Functions.

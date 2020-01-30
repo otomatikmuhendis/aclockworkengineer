@@ -4,6 +4,7 @@ layout: post
 categories: Azure
 published: true
 title: Architect Azure API Management service
+subtitle: Architect serverless solutions in Azure
 image: /img/azure-api-gateway-policy-wizard.png
 tags:
   - cloud
@@ -12,8 +13,8 @@ tags:
   - api
   - cache
   - security
+serieName: serverless
 ---
-# API Gateway
 
 Let's setup an API gateway using the Azure API Management service with a nice architecture.
 

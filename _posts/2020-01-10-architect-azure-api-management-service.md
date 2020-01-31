@@ -26,7 +26,7 @@ It is a native Azure SaaS (software as a service) which brings nice pros;
 - API documentation
 - Rate limiting access
 - Health monitoring
-- Moodern formats like JSON
+- Modern formats like JSON
 - Connections to any API
 - Analytics
 - Security
@@ -63,7 +63,7 @@ Now, you can test the gateway through the __Test__ tab on the API details page.
 
 # Subscriptions
 
-A subscription is like authenticating a client with a public key which can be transfered through in the headers or in the query string. The subscription can be scoped to All APIs, a single API or a group of APIs (called a product).
+A subscription is like authenticating a client with a public key which can be transferred through in the headers or in the query string. The subscription can be scoped to All APIs, a single API or a group of APIs (called a product).
 
 The unique subscription keys can be regenerated at any time. Every subscription has two keys, a primary and a secondary to avoid downtime.
 
@@ -158,7 +158,7 @@ If we build an API with the [HATEOAS](https://restfulapi.net/hateoas/) constrain
 
 ## Limit call rate by subscription
 
-If we place the `rate-limit-by-key` tag inside the `inbound` element, it will limit the call rate by subscription. A subscription can call this API 10 times in 60 seconds and only the successfull responses are counted.
+If we place the `rate-limit-by-key` tag inside the `inbound` element, it will limit the call rate by subscription. A subscription can call this API 10 times in 60 seconds and only the successful responses are counted.
 
 ```xml
 <inbound>

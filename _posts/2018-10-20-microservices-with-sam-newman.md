@@ -32,6 +32,6 @@ Change one thing at a time. First split into microservices then change your tech
 
 [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 
-[Memories, Guesses, and Apologies](https://blogs.msdn.microsoft.com/pathelland/2007/05/15/memories-guesses-and-apologies/)
+[Memories, Guesses, and Apologies](https://channel9.msdn.com/shows/ARCast.TV/ARCastTV-Pat-Helland-on-Memories-Guesses-and-Apologies/)
 
 [Modelling Reactive Systems with Event Storming and Domain-Driven Design](https://blog.redelastic.com/corporate-arts-crafts-modelling-reactive-systems-with-event-storming-73c6236f5dd7)

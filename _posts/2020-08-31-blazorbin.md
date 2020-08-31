@@ -16,7 +16,7 @@ Yet another request bin but made with Blazor this time. When you build serverles
 
 When I saw [Blazor WebAssembly 3.2.0 Preview 1 release now available](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-preview-1-release-now-available) article on ASP.NET Blog, I decided to give it a try to work with Azure SignalR Service.
 
-BlazorBin is on Azure and can be accessed by [https://blazorbin.azurewebsites.net/](https://blazorbin.azurewebsites.net/). A new endpoint that goes to an Azure Function will be created when you visit the website like https://bbf.azurewebsites.net/gMYKUF3W84 When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking the menu item.
+BlazorBin is on Azure and can be accessed by [blazorbin.azurewebsites.net/](https://blazorbin.azurewebsites.net/). A new endpoint (for example https://bbf.azurewebsites.net/gMYKUF3W84) that points to an Azure Function will be created when you visit the website. When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking on the menu item.
 
 <!--more-->
 
@@ -24,4 +24,4 @@ BlazorBin is on Azure and can be accessed by [https://blazorbin.azurewebsites.ne
 
 The hardest part in this project was using multiple Azure SignalR Services because of limitations. You need two SignalR services, one in Default and the other one in Serverless service mode. You can see the comparions [here](https://github.com/Azure/azure-signalr/blob/dev/docs/faq.md#what-is-the-meaning-of-service-mode-defaultserverlessclassic-how-can-i-choose). Since Blazor has the hub server, we need a SignalR service in Default mode for it. Another one in Serverless mode to communicate between clients. The clients are an Azure Function and a Blazor app in our case.
 
-The code can be found on [github.com/olcay/blazorbin](https://github.com/olcay/blazorbin) repository. I tried to explain how to install it step by step. I used Github Actions to deploy to Azure. It is running on free resources.
+The code can be found on [github.com/olcay/blazorbin](https://github.com/olcay/blazorbin) repository. I tried to explain how to install it step by step. I used Github Actions to deploy to Azure. It is running on free resources. I have been using it to test ingrations of my serverless systems for a while now.

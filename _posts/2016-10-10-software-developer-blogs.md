@@ -14,8 +14,6 @@ subtitle: Curated list of blogs of software developers
 
 [Sindre Sorhus’ blog](https://blog.sindresorhus.com/) - Developer of [Yeoman](http://yeoman.io/) and [TodoMVC](http://todomvc.com/)
 
-[Mike Mengell](http://mikemengell.com/)
-
 [Brett Slatkin](http://www.onebigfluke.com/) - Recommended: [What's awful about being a {software engineer, tech lead, manager}?](http://www.onebigfluke.com/2016/04/whats-awful-building-software.html)
 
 [StrathWeb by Filip W.](http://www.strathweb.com/)

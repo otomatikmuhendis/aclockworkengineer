@@ -1,11 +1,11 @@
+- name: BlazorBin
+  href: https://blazorbin.azurewebsites.net
+  
+- name: Cognitive Emotion
+  href: https://cognitiveemotion.herokuapp.com
+
 - name: SharpTrooper
   href: https://github.com/olcay/SharpTrooper
 
-- name: Is.Net
-  href: https://github.com/olcay/Is.Net
-
 - name: node-recaptcha2
   href: https://www.npmjs.com/package/node-recaptcha2
-
-- name: tinycards
-  href: https://tinycards.duolingo.com/users/olcaybayram

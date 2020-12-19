@@ -12,7 +12,7 @@ Last week, I was lucky to have a workshop from [Sam Newman](https://samnewman.io
 
 The best thing about the workshop was that it did not start with all that hatred against to monolith systems. If you are building something from scratch you can still build it as a monolith system, it is not that bad.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) <a href="https://twitter.com/honest_update/status/651897353889259520?ref_src=twsrc%5Etfw">October 7, 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We replaced our monolith with micro services so that every outage could be more like a murder mystery.</p>&mdash; Honest Status Page (@honest_update) October 7, 2015</blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I have worked in a lot of places, real big and real bad ones though and that gave me a lot of experience. When I read books about how to deal with legacy stuff or killing that monolith giant, the worst case scenarios were not even as bad as what I have seen. Still I can solve the stuff with the knowledge in the books but I could not use it exactly as it is. So it is always different in the book and in the real-world. The book cannot help you to solve your specific situation and you help yourself by hiring a consultant at the end.

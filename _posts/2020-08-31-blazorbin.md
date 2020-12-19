@@ -17,7 +17,7 @@ Yet another request bin but made with Blazor this time. When you build serverles
 
 When I saw [Blazor WebAssembly 3.2.0 Preview 1 release now available](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-preview-1-release-now-available) article on ASP.NET Blog, I decided to give it a try to work with Azure SignalR Service.
 
-~~BlazorBin is on Azure and can be accessed by blazorbin.azurewebsites.net/~~. **This service does not continue because of the billing issues.** A new endpoint to an Azure Function, will be created when you visit the website. When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking on the menu item.
+~~BlazorBin is on Azure and can be accessed by blazorbin.azurewebsites.net/~~. **This service does not continue because of a billing issue.** A new endpoint to an Azure Function, will be created when you visit the website. When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking on the menu item.
 
 <!--more-->
 

@@ -12,11 +12,12 @@ tags:
   - blazor
 subtitle: Yet another request bin
 ---
+
 Yet another request bin but made with Blazor this time. When you build serverless apps or functions, your system depends on webhooks a lot. There are request bin tools on web which provides you unique endpoints so you can send requests from your system and see what is coming in  the payload.
 
 When I saw [Blazor WebAssembly 3.2.0 Preview 1 release now available](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-preview-1-release-now-available) article on ASP.NET Blog, I decided to give it a try to work with Azure SignalR Service.
 
-BlazorBin is on Azure and can be accessed by [blazorbin.azurewebsites.net/](https://blazorbin.azurewebsites.net/). A new endpoint (for example https://bbf.azurewebsites.net/gMYKUF3W84) which points to an Azure Function, will be created when you visit the website. When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking on the menu item.
+~~BlazorBin is on Azure and can be accessed by blazorbin.azurewebsites.net/~~. **This service does not continue because of the billing issues.** A new endpoint to an Azure Function, will be created when you visit the website. When a request comes to the endpoint, it will be listed on the left-hand-side menu as the method name. You can see the details of that request by clicking on the menu item.
 
 <!--more-->
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Etiketler
+title: Tags
 permalink: /tags/
 ---
 

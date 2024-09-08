@@ -11,7 +11,7 @@ tags:
   - swapi
   - opensource
 ---
-[Paul Hallett](http://github.com/phalt) developed a web api called [SWAPI](https://swapi.dev/) which consists of the data from the universe of Star Wars.
+[Paul Hallett](https://github.com/phalt) developed a web api called [SWAPI](https://swapi.dev/) which consists of the data from the universe of Star Wars.
 
 You can find all the planets, spaceships, vehicles, characters from the six original movies. This is a nice dataset to practice coding or for an assessment. I wrote an api client [SharpTrooper](https://github.com/olcay/SharpTrooper) with C# to support this project in 2015. You know Storm Troopers are famous with their lack of targeting skills.
 

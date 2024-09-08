@@ -114,7 +114,7 @@ namespace OlcayFunctionAppSample
 1. Press __F5__ to start debugging.
 1. Copy the URL of your function from the Azure Functions runtime output.
     ![Azure Functions Debugging](/img/AzureFunctionsDebugging.png)
-1. Paste the URL `http://localhost:7071/api/DurableFunction_HttpStart` into your browser's address bar and execute the request.
+1. Paste the URL `https://localhost:7071/api/DurableFunction_HttpStart` into your browser's address bar and execute the request.
 1. Copy the URL value for `statusQueryGetUri` and paste it in the browser's address bar and execute the request. If you do it on time, you will see _Pending_ or _Running_ as `runtimeStatus`.
 1. If you wait enough to expire timeout task and refresh, the `runtimeStatus` would be _Completed_ and an output message would be displayed as _The order is escalated to Head of department!_.
 1. If you raise _ship_ event before the timeout expires, the `runtimeStatus` would be _Completed_ and an output message would be displayed as _The order is shipped!_.

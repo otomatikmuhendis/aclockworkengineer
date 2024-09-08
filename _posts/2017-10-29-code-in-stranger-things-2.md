@@ -9,7 +9,7 @@ tags:
   - movie
   - basic
 ---
-If you want to break a software's security pass in early 1980's, you need to code in BASIC like in the series [Deutchland 83](http://olcay.dev/2017/05/04/deutschland-83-encoded-floppy-disc/)
+If you want to break a software's security pass in early 1980's, you need to code in BASIC like in the series [Deutchland 83](https://olcay.dev/2017/05/04/deutschland-83-encoded-floppy-disc/)
 
 Stranger Things 2 is in 1984 as well so once again we are dealing with some BASIC code.
 

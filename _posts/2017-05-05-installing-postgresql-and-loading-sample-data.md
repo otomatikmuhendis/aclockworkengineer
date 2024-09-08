@@ -30,9 +30,9 @@ Open up a Command Prompt window and write those methods to create the database a
 	> create user dvdclerk with password 'dvdsafe'; 
 	> grant all privileges on database dvdrental to dvdclerk;
 
-We have the database server and the database ready to load some data. We will restore sample database from [PostgreSQL Tutorial](http://www.postgresqltutorial.com).
+We have the database server and the database ready to load some data. We will restore sample database from [PostgreSQL Tutorial](https://www.postgresqltutorial.com).
 
-Download [DVD Rental Sample Database](http://www.postgresqltutorial.com/postgresql-sample-database/) file and unzip it to your C:\ drive. Call `pg_restore` command to restore it.
+Download [DVD Rental Sample Database](https://www.postgresqltutorial.com/postgresql-sample-database/) file and unzip it to your C:\ drive. Call `pg_restore` command to restore it.
 
 `> pg_restore -d dvdrental C:\dvdrental.tar`
 
@@ -50,6 +50,6 @@ Source:
 
 - [Postgres for .NET Developers](https://app.pluralsight.com/library/courses/postgres-dotnet-developers/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/current/static/)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 - [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/)
 

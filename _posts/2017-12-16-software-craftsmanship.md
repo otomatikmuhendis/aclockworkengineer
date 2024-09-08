@@ -13,7 +13,7 @@ tags:
 ---
 _For all those companies which are in the middle of agile transformation or transformed already._
 
-As software developers, we have another manifesto that raises the bar a little bit higher over [Agile Software Development](http://agilemanifesto.org/), that is called [Software Craftsmanship](http://manifesto.softwarecraftsmanship.org/) and signed by same people who wrote Agile manifesto.
+As software developers, we have another manifesto that raises the bar a little bit higher over [Agile Software Development](https://agilemanifesto.org/), that is called [Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/) and signed by same people who wrote Agile manifesto.
 
 We should start from definitions to understand anything so let's examine Software Craftsmanship word by word.
 

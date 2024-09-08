@@ -15,7 +15,7 @@ subtitle: Frequently used attribute and annotations in various testing framework
 ---
 It is called attributes in the .NET environment and annotations in Java. We use them to declare information about methods, types, properties and so on.
 
-We will discuss about frequently used ones to run test scenarious properly. You would find comparisons of [NUnit](https://github.com/nunit/docs/wiki/Attributes), [MSTest](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.classinitializeattribute.aspx), [xUnit.net](https://xunit.net/) and [JUnit](http://junit.org) testing frameworks down below.
+We will discuss about frequently used ones to run test scenarious properly. You would find comparisons of [NUnit](https://github.com/nunit/docs/wiki/Attributes), [MSTest](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.testtools.unittesting.classinitializeattribute.aspx), [xUnit.net](https://xunit.net/) and [JUnit](https://junit.org) testing frameworks down below.
 
 You could find very comprehensive tutorials on [Guru99](https://www.guru99.com/junit-annotations-api.html) website.
 

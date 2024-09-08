@@ -1,174 +1,225 @@
-﻿# --- Serving options --- #
+# The Site Configuration
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# Import the theme
+theme: jekyll-theme-chirpy
 
-# If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "https://olcay.dev"
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Europe/Amsterdam
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: A Clockwork Engineer # the main title
+
+tagline: accelerating the mechanization # it will display as the subtitle
+
+description: >- # used by seo meta and the atom feed
+  A blog about software development, testing, cloud.
+
+# Fill in the protocol & hostname for your site.
+# E.g. 'https://username.github.io', note that it does not end with a '/'.
+url: "https://olcay.github.io"
+
+github:
+  username: olcay # change to your GitHub username
+
+twitter:
+  username: kaliteai # change to your Twitter username
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Olcay Bayram
+  email: otomatikmuhendis@yahoo.com # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/kaliteai # change to your Twitter homepage
+    - https://github.com/olcay # change to your GitHub homepage
+    # Uncomment below to add more social links
+    - https://www.youtube.com/olcaybayramom
+    - https://www.linkedin.com/in/olcaybayram
+
+# Site Verification Settings
+webmaster_verifications:
+  google: # fill in your Google verification code
+  bing: # fill in your Bing verification code
+  alexa: # fill in your Alexa verification code
+  yandex: # fill in your Yandex verification code
+  baidu: # fill in your Baidu verification code
+  facebook: # fill in your Facebook verification code
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+# Web Analytics Settings
+analytics:
+  google:
+    id: "UA-43894898-3" # fill in your Google Analytics ID
+  goatcounter:
+    id: # fill in your GoatCounter ID
+  umami:
+    id: # fill in your Umami ID
+    domain: # fill in your Umami domain
+  matomo:
+    id: # fill in your Matomo ID
+    domain: # fill in your Matomo domain
+  cloudflare:
+    id: # fill in your Cloudflare Web Analytics token
+  fathom:
+    id: # fill in your Fathom Site ID
+
+# Page views settings
+pageviews:
+  provider: # now only supports 'goatcounter'
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
+#
+theme_mode: # [light | dark]
+
+# The CDN endpoint for media resources.
+# Notice that once it is assigned, the CDN url
+# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+cdn:
+
+# the avatar on sidebar, support local or CORS resources
+avatar: img/avatar-icon.png
+
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+# It can be overridden by a customized `page.image` in front matter.
+social_preview_image: # string, local or CORS resources
+
+# boolean type, the global switch for TOC in posts.
+toc: true
+
+comments:
+  # Global switch for the post-comment system. Keeping it empty means disabled.
+  provider: disqus # [disqus | utterances | giscus]
+  # The provider options are as follows:
+  disqus:
+    shortname: a-clockwork-engineer # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: # <gh-username>/<repo>
+    repo_id:
+    category:
+    category_id:
+    mapping: # optional, default to 'pathname'
+    strict: # optional, default to '0'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development | production]
+
+pwa:
+  enabled: true # The option for PWA feature (installable)
+  cache:
+    enabled: true # The option for PWA offline cache
+    # Paths defined here will be excluded from the PWA cache.
+    # Usually its value is the `baseurl` of another website that
+    # shares the same domain name as the current website.
+    deny_paths:
+      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+
+paginate: 10
+
+# The base URL of your site
 baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+# ------------ The following options are not recommended to be modified ------------------
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# Name of website
-title: A Clockwork Engineer
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
-# Short description of your site
-description: accelerating the mechanization
-
-# --- Navigation bar options --- #
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
-
-# List of links in the navigation bar
-navbar-links:
-  Software: "category/software"
-  Database: "category/database"
-  Testing: "category/testing"
-  Categories: "categories"
-  Archive: "archive"
-  About: "about"
-  
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Olcay Bayram
-  email: "otomatikmuhendis@yahoo.com"
-  fbadmin: olcaybayram
-  facebook: otomatikmuhendis
-  github: olcay
-  twitter:
-  linkedin: in/olcaybayram
-  website: http://olcaybayram.com.tr
-  instagram: otomatikmuhendis
-  youtube: olcaybayramom
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "olcay.dev"
-
-# --- Misc --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus_shortname: "a-clockwork-engineer"
-
-# Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-43894898-3"
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "Europe/Amsterdam"
-markdown: kramdown
-highlighter: rouge
-permalink: /:year/:month/:day/:title/
-paginate: 10
-excerpt_separator: <!--more-->
-
-# Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
+  - scope:
+      path: "" # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /:year/:month/:day/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
       path: ""
-      type: "posts"
+      type: tabs # see `site.collections`
     values:
-      comments: true  # add comments to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "default"
+      layout: page
+      permalink: /:title/
 
-# Exclude these files from production site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
-  - Vagrantfile
+sass:
+  style: compressed
 
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
   ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "author"
-        field:
-          element: "hidden"
-          value: "Olcay Bayram"
-      - name: "image"
-        field:
-          element: "text"
-          label: "Image"
-          help: "Featured image for index."
-          placeholder: "/img/..."
-          alterable: true
-      - name: "categories"
-        field:
-          element: "select"
-          label: "Category"
-          alterable: true
-          options:
-            - name: 'Database'
-              value: 'Database'
-            - name: 'Software'
-              value: 'Software'
-            - name: 'Projects'
-              value: 'Projects'
-            - name: 'Testing'
-              value: 'Testing'
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Tags"
-          alterable: true
-          options:
-            - name: 'javascript'
-              value: 'javascript'
-            - name: 'msdos'
-              value: 'msdos'
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
+    envs: [development]
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

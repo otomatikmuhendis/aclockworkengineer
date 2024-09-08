@@ -9,7 +9,7 @@ tags:
   - PostgreSQL
 serieName: postgres
 ---
-We can use an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) Web Application template to create our Web API. We will use [Npgsql](http://www.npgsql.org/), a [PostgreSQL](https://www.postgresql.org/) database provider for Entity Framework Core. Install its package from NuGet with the command below.
+We can use an [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) Web Application template to create our Web API. We will use [Npgsql](https://www.npgsql.org/), a [PostgreSQL](https://www.postgresql.org/) database provider for Entity Framework Core. Install its package from NuGet with the command below.
 
 	PM>  Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
 

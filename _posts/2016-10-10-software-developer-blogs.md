@@ -12,32 +12,30 @@ published: true
 subtitle: Curated list of blogs of software developers
 ---
 
-[Sindre Sorhus’ blog](https://blog.sindresorhus.com/) - Developer of [Yeoman](http://yeoman.io/) and [TodoMVC](http://todomvc.com/)
+[Sindre Sorhus’ blog](https://blog.sindresorhus.com/) - Developer of [Yeoman](https://yeoman.io/) and [TodoMVC](https://todomvc.com/)
 
-[Brett Slatkin](http://www.onebigfluke.com/) - Recommended: [What's awful about being a {software engineer, tech lead, manager}?](http://www.onebigfluke.com/2016/04/whats-awful-building-software.html)
+[Brett Slatkin](https://www.onebigfluke.com/) - Recommended: [What's awful about being a {software engineer, tech lead, manager}?](https://www.onebigfluke.com/2016/04/whats-awful-building-software.html)
 
-[StrathWeb by Filip W.](http://www.strathweb.com/)
+[StrathWeb by Filip W.](https://www.strathweb.com/)
 
-[Burak Tungut](http://www.buraktungut.com/) -  Book author
+[Burak Tungut](https://www.buraktungut.com/) -  Book author
 
-[Gökhan Gökalp](http://www.gokhan-gokalp.com/) - Book author
+[Gökhan Gökalp](https://www.gokhan-gokalp.com/) - Book author
 
 [Ahmet Rende](https://ahmetrende.com/)
 
-[Halil ibrahim Kalkan](http://halilibrahimkalkan.com/) - Developer of [ASP.NET Boilerplate](http://aspnetboilerplate.com/)
+[Halil ibrahim Kalkan](https://halilibrahimkalkan.com/) - Developer of [ASP.NET Boilerplate](https://aspnetboilerplate.com/)
 
-[Tayfun Yaşar](http://www.tayfunyasar.com/)
+[Tayfun Yaşar](https://www.tayfunyasar.com/)
 
-[Tuğba Üstündağ](http://tugbaustundag.com/)
-
-<!--more-->
+[Tuğba Üstündağ](https://tugbaustundag.com/)
 
 [Muhammet Dilmaç](https://muhammetdilmac.com.tr/)
 
-[Oguz Ozkeroglu - Web Günlüğü](http://www.oguzozkeroglu.com/)
+[Oguz Ozkeroglu - Web Günlüğü](https://www.oguzozkeroglu.com/)
 
-[Kadın Yazılımcı](http://www.kadinyazilimci.com/)
+[Kadın Yazılımcı](https://www.kadinyazilimci.com/)
 
-[Turan Yunus](http://www.turanyunus.com/)
+[Turan Yunus](https://www.turanyunus.com/)
 
-[Software Test Academy](http://www.swtestacademy.com/)
+[Software Test Academy](https://www.swtestacademy.com/)

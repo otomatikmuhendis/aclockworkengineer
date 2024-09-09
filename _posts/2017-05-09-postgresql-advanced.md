@@ -31,8 +31,6 @@ You can use `date_part` to get a part of datetime.
 	
 ![postgres_generate_series.png]({{site.baseurl}}/img/postgres_generate_series.png)
 
-<!--more-->
-
 	select trunc(random() * 1000 + 1) from generate_series(1, 1000);
 	
 Let's use this series in an example;

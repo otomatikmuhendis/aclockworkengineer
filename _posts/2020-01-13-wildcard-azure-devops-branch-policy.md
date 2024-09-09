@@ -15,8 +15,6 @@ We use [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) as ou
 
 This is not like setting a branch policy for an existing branch, it would be a wildcard for future branches. You need to do one extra step to access the correct page for a wildcard and this is not documented yet.
 
-<!--more-->
-
 1. Go to Branches page under Repos on Azure Devops.
 1. If you already have a folder in your repo, you can skip to step 5.
 1. Click __New branch__ and fil in the name like _release/tempBranch_.

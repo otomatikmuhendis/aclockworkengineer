@@ -16,7 +16,7 @@ The `local.settings.json` file is used to store configuration settings for your 
 
 When you create an Azure Function project in Visual Studio Code or with the Azure Functions Core Tools, a default local.settings.json file is created for you. You can edit this file to add or modify configuration settings as needed.
 
-<!--more-->
+
 
 When you run your Azure Functions locally, the `local.settings.json` file is read by the Azure Functions runtime to get the configuration settings that your function code needs to run. Without this file, your function code may not be able to access the resources it needs to function correctly, such as a database or a storage account.
 

@@ -17,8 +17,6 @@ I will write my notes about Postgres in this series. We will start with installi
 
 First, download PostgreSQL database from [PostgreSQL Downloads](https://www.postgresql.org/download/) page to install. I use Windows so I chose Windows installer but you can use another operating system and also to develop because we can code ASP.NET Core Web Application in different operating systems.
 
-<!--more-->
-
 Add PostgreSQL bin folder to Windows Path in Environment Variables.
 
 `C:\Program Files\PostgreSQL\9.6\bin`

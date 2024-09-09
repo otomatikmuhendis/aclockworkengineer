@@ -31,7 +31,7 @@ You can see the full product catalog on https://imagine.microsoft.com/en-us/cata
 ### JetBrains
 
 This was in the Github Student Pack list before. Now, you can through their webpage on https://www.jetbrains.com/student/ link. If you are a strudent then you can get a JetBrains certificate for every usefull product of JetBrains like ReSharper and WebStorm.
-<!--more-->
+
 ### Heroku
 
 https://www.heroku.com/ is older than our modern cloud services. You can create your serverless web applications on their free tier services and by using free add-on on begining level. So that is ideal for development.

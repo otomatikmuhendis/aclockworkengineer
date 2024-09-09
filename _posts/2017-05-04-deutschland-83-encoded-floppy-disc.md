@@ -17,7 +17,6 @@ They finally acquire an [IBM Model 5155](https://oldcomputers.net/ibm5155.html) 
 
 On the next scene, we see a code block which generates random numbers on the screen with 3 _for_ loops. As we can see from that, the number of rows is 64 and the matris is all random. Also there are some mistyped letters with `Syntax error` below.
 
-<!--more-->
 ![deutschland_83_ibm_code_block.png]({{site.baseurl}}/img/deutschland_83_ibm_code_block.png)
 
 I like to read codes in movies but this time it wasn't what I expected. Capitalists try to add some fun to this high tension series but making fun of the communists is another thing.

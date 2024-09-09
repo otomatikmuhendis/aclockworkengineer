@@ -15,7 +15,6 @@ Let's try dotnet sample application within a docker container.
     
 ![docker_microsoft_sample.png]({{site.baseurl}}/img/docker_microsoft_sample.png)
 
-<!--more-->
 
 If we have a working docker, we can build our image. First, we will create a dotnet console application;
 

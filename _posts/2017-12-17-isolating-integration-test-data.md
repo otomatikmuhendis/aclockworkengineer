@@ -16,8 +16,6 @@ After covering every corners of our code with unit tests, we can move on to inte
 
 On the other hand, we can use good old [TransactionScope](https://msdn.microsoft.com/tr-tr/library/system.transactions.transactionscope(v=vs.110).aspx) in the System library. Thanks to [NUnit](https://nunit.org/) unit-testing framework, we do not need to initialize a transaciton scope every time we write a test case. We can create an attribute which is inherited ITestAction interface so it would be ran before and after every test case.
 
-<!--more-->
-
 In the `BeforeTest` method, it creates a new `TransactionScope`. In the `AfterTest` method, instead of calling `Complete()` function of the transaction scope to commit all the changes to the database, we call `Dispose()` to rollback the specific transaction.
 
 ```csharp

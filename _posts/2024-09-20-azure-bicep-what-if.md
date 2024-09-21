@@ -3,7 +3,7 @@ author: Olcay Bayram
 layout: post
 categories: Software
 published: true
-title: What If
+title: Haste is a tree whose fruit is regret
 image: /img/oracle.jpeg
 tags:
   - cloud
@@ -11,6 +11,8 @@ tags:
   - azure
   - IaC
 ---
+
+# What If
 
 Life is full of regrets. We sometimes wish we had made different decisions. However, when you use Bicep as your ARM template language, you don’t need to worry about your actions. You can simply ask Azure CLI for the changes, even before you apply them.
 
@@ -56,3 +58,5 @@ As a cloud agnostic developer, I would like to share the commands to achive the 
 | Amazon Web Services (AWS)    | `aws cloudformation create-change-set`                   |
 | Google Cloud Platform (GCP)  | `gcloud deployment-manager deployments update --preview` |
 | Terraform (Multi-Cloud)      | `terraform plan`                                         |
+
+"Haste is a tree whose fruit is regret." is a Turkish proverb.

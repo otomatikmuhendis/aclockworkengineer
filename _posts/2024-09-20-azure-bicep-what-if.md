@@ -4,6 +4,7 @@ layout: post
 categories: Software
 published: true
 title: Haste is a tree whose fruit is regret
+description: ARM template deployment what-if operation
 image: /img/oracle.jpeg
 tags:
   - cloud
@@ -12,9 +13,9 @@ tags:
   - IaC
 ---
 
-# What If
+## What If
 
-Life is full of regrets. We sometimes wish we had made different decisions. However, when you use Bicep as your ARM template language, you don’t need to worry about your actions. You can simply ask Azure CLI for the changes, even before you apply them.
+Life is full of regrets. We sometimes wish we had made different decisions. However, when you use Bicep as your ARM template language, you don’t need to worry about your actions. You can simply ask Azure CLI/PowerShell for the changes, even before you apply them.
 
 - Will I break something?
 - How will this deployment affect existing resources?
@@ -28,13 +29,13 @@ It compares the current state model to the desired state model. However, it is n
 
 For example, assume you are changing the storage type in a template that deploys a single storage account to an existing environment.
 
-```terminal
+```shell
 az deployment group what-if --resource-group PincushionAppTstRg --template-file $templateFile --result-format FullResourcePayloads
 ```
 
 The preceding command produces the following results:
 
-```text
+```shell
 Resource and property changes are indicated with this symbol:
  ~ Modify
 

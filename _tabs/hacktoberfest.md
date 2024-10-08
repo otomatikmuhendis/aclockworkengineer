@@ -12,7 +12,7 @@ Hackertoberfest katılımcıları
     {% assign attendee = att_hash[1] %}
     <li>
         {{ attendee.name }} <br/>  
-        <img src="https://gravatar.com/avatar/?d=robohash" width="80" height="80" data-username="{{ attendee.username }}" data-domain="{{ attendee.domain }}"/>
+        <img src="https://gravatar.com/avatar/?d=robohash" width="80" height="80" data-username="{{ attendee.username }}" data-domain="{{ attendee.domain }}" alt="{{ attendee.name }}"/>
     </li>
 {% endfor %}
 </ul>

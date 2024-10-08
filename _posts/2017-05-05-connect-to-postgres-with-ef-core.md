@@ -17,7 +17,7 @@ If you already have a Postgres database, add its connection string to _appsettin
 
 **appsettings.json**
 
-{% highlight json %}
+```json
 {
   "Logging": {
     "IncludeScopes": false,
@@ -31,15 +31,14 @@ If you already have a Postgres database, add its connection string to _appsettin
     }
   }
 }
-{% endhighlight %}
+```
 
 Write a model for film table of the sample data. Important part is Postgres is case sensitive here, so we need to define column and table names explicitly. Also EF wants to know the identity column of the table.
 
-<!--more-->
 
 **Models/Film.cs**
 
-{% highlight csharp %}
+```csharp
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -57,13 +56,13 @@ namespace EFCore_Postgres.Models
 
   }
 }
-{% endhighlight %}
+```
 
 Now we have our model so we can create our database context like below;
 
 **ElephantContext.cs**
 
-{% highlight csharp %}
+```csharp
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCore_Postgres
@@ -78,13 +77,13 @@ namespace EFCore_Postgres
     public DbSet<Models.Film> Films { get; set; }
   }
 }
-{% endhighlight %}
+```
 
 We have to add this context to container in `ConfigureServices` function in `Startup` class of our web application. Remember to add `Microsoft.EntityFrameworkCore` reference to usings.
 
 **Startup.cs**
 
-{% highlight csharp %}
+```csharp
 using Microsoft.EntityFrameworkCore;
 
 ...
@@ -96,13 +95,13 @@ public void ConfigureServices(IServiceCollection services)
 
   services.AddDbContext<ElephantContext>(options => options.UseNpgsql(Configuration["Data:PostgreConnection:ConnectionString"]));
 }
-{% endhighlight %}
+```
 
 Congratulations, it is ready to use now. Let the [built-in dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) of ASP.NET Core to initialize the database context for us in the sample `ValuesController` from Web API template.
 
 **Controllers/ValuesController.cs**
 
-{% highlight csharp %}
+```csharp
 private readonly ElephantContext _context;
 
 public ValuesController(ElephantContext context)
@@ -118,7 +117,7 @@ public IEnumerable<string> Get()
 
   return films;
 }
-{% endhighlight %}
+```
 
 We will have a list of movie titles as a response.
 

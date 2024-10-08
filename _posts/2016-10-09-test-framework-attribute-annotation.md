@@ -30,7 +30,6 @@ You could find very comprehensive tutorials on [Guru99](https://www.guru99.com/j
 |[Ignore]|[Ignore]|[Fact(Skip="reason")]|@Ignore|Ignores the test case.|
 |[Category("")]|[TestCategory("")]|[Trait("Category", "")]|@Category(*.class)|Categorizes the test cases or classes.|
 
-<!--more-->
 
 There is a little difference between them except that the xUnit framework. xUnit prefers inheritance for the ones that it doesn't want to be used very often.
 
@@ -38,21 +37,17 @@ Category separation is a best practice on testing because you could see your tes
 
 If you don't want to run a test temporarily you could use ignore attribute. Your test runner tool will skip that test and show it with the provided message.
 
-<span class="responsiveImg">
-[![testingIgnore.png]({{site.baseurl}}/img/testingIgnore.png)]({{site.baseurl}}/img/testingIgnore.png)
-</span>
-*Display on Test Explorer*
+![testingIgnore.png]({{site.baseurl}}/img/testingIgnore.png)
+_Display on Test Explorer_
 
-<span class="responsiveImg">
-[![testingIgnoreJenkins.png]({{site.baseurl}}/img/testingIgnoreJenkins.png)]({{site.baseurl}}/img/testingIgnoreJenkins.png)
-</span>
-*Display on Jenkins CI Test Coverage Report*
+![testingIgnoreJenkins.png]({{site.baseurl}}/img/testingIgnoreJenkins.png)
+_Display on Jenkins CI Test Coverage Report_
 
 Let's build a test project to see the order of the attributes preciesly.
 
 Create a new Class Library project and a method to test like the one below.
 
-{% highlight csharp linenos %}
+```csharp
 namespace OtomatikMuhendis.TestSample
 {
   public class DivideClass
@@ -63,13 +58,13 @@ namespace OtomatikMuhendis.TestSample
     }
   }
 }
-{% endhighlight %}
+```
 
 Add an Unit Test Project to the Solution and add a reference of the class library project.
 
 Replace the unit test class with the following example.
 
-{% highlight csharp linenos %}
+```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OtomatikMuhendis.TestSample;
 using System.Diagnostics;
@@ -172,12 +167,11 @@ namespace OtomatikMuhendis.UnitTest
     }
   }
 }
-{% endhighlight %}
+```
 
-<span class="responsiveImg">
-[![testingProject.png]({{site.baseurl}}/img/testingProject.png)]({{site.baseurl}}/img/testingProject.png)
-</span>
-*Project will be like this*
+
+![testingProject.png]({{site.baseurl}}/img/testingProject.png)
+_Project will be like this_
 
 Output of our test run;
 

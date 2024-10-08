@@ -24,8 +24,6 @@ A craft is a profession that requires particular skills and knowledge of skilled
 ### Craftsmanship
 Craftsmanship is our journey and we can define our journey like;
 
-<!--more-->
-
 Once an **apprentice** of a craft had finished her apprenticeship, 
 she would become a **journeyman** searching for a place to set up her own shop and make a living.
 After she set up her own shop, she could then call herself a **master** of her craft.

@@ -30,7 +30,7 @@ Insert all the data in the row to that column. The original table comes from the
 	from film_docs
 	where data -> 'title' ? 'Chamber Italian';
 
-There are lots of [JSON functions and operators](https://www.postgresql.org/docs/current/static/functions-json.html). I think Entity Framework does not have these functions. <!--more-->I will search for this next time.
+There are lots of [JSON functions and operators](https://www.postgresql.org/docs/current/static/functions-json.html). I think Entity Framework does not have these functions. I will search for this next time.
 
 	explain select (data ->> 'title') as Title,
 	(data -> 'length') as Length

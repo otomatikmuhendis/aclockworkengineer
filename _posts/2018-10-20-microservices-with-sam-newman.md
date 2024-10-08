@@ -17,8 +17,6 @@ The best thing about the workshop was that it did not start with all that hatred
 
 I have worked in a lot of places, real big and real bad ones though and that gave me a lot of experience. When I read books about how to deal with legacy stuff or killing that monolith giant, the worst case scenarios were not even as bad as what I have seen. Still I can solve the stuff with the knowledge in the books but I could not use it exactly as it is. So it is always different in the book and in the real-world. The book cannot help you to solve your specific situation and you help yourself by hiring a consultant at the end.
 
-<!--more-->
-
 Sam Newman is one of those consultants, so he knows really ugly stuff. He shared his experience with us in this compact 2-day workshop. We even did an event storming session.
 
 Notes from the workshop;

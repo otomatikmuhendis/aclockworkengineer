@@ -19,7 +19,7 @@ _Constant_, _Type_ or _Var_ patterns can be used in if statements and you can de
 
 ### Switch statements
 Switch has biggest improvements. You can switch, not just primitive types, any type you want. Patterns can be used in case clauses which can have additional conditions with `when` keyword.
-<!--more-->
+
 ### Tuples
 _Tuples_ are really great but it was a backpain to use `System.Tuple<...>`. Now, we just add `System.ValueTuple` reference and it comes with _tuple types_ to return and _tuple literals_ to declare.
 

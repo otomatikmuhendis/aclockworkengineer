@@ -37,8 +37,6 @@ It is a native Azure SaaS (software as a service) which brings nice pros;
 
 Yes, [the circuit breaker policy](https://feedback.azure.com/forums/248703-api-management/suggestions/15527100-circuit-breaker-policy) is not implemented yet. You can build your own API gateway with a circuit breaker using third-party libraries like [Ocelot](https://github.com/ThreeMammals/Ocelot) and [Polly](https://github.com/App-vNext/Polly) with [Quality of Service](https://ocelot.readthedocs.io/en/latest/features/qualityofservice.html) configured but does it worth to go down to a PaaS (platform as a service) instead of a SaaS?
 
-<!--more-->
-
 ## Setup an API Management service
 
 1. Sign into the [Azure portal](https://portal.azure.com/#create/hub).

@@ -27,9 +27,7 @@ Now, we could convert the command line arguments to configuration settings and u
 
 Finally, the Program.cs file will look like this;
 
-<!--more-->
-
-{% highlight csharp linenos %}
+```csharp
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -57,6 +55,6 @@ namespace Libton
     }
   }
 }
-{% endhighlight %}
+```
 
 Yes, ASP.NET works on Heroku.

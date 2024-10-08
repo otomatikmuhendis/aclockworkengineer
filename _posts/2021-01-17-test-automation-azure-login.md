@@ -53,7 +53,7 @@ module.exports = {
     }
 };
 ```
-<!--more-->
+
 
 The purpose of this post is not anything related to hacking. This would help you to pass Microsoft login if you know the credentials already. If you do not know them, you cannot use this code to bypass any security measures.
 

@@ -26,7 +26,6 @@ For example, functions have a timeout of 10 minutes maximum. If it is triggered 
 
 You will be working only on your business logic code in the technology stack of your choice (.NET Core, Node.js, Python, Java and PowerShell Core). No more hassle about infrastucture, scaling up or down. Most importantly, you are charged based on what is used.
 
-<!--more-->
 
 ## Bindings
 

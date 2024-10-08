@@ -26,8 +26,7 @@ Functions use dollar signs to show scopes and language keyword for the language 
 	$$
 		select now() as result;
 	$$ language sql;
-	
-<!--more-->
+
 
 Create tables to continue. Another new data type for MSSQL developers; [tsvector](https://www.postgresql.org/docs/current/static/datatype-textsearch.html), a document in a form optimized for text search. We will use it later but we must fill it with data. You can create a trigger for insert and update operations in this table to update this column or write it in your insert statement. There is a bad practice like creating the tsvector column in select statement but it would be a performance loss.
 As you can view below, relations are a little bit different then MSSQL.

@@ -14,7 +14,7 @@ timezone: Europe/Amsterdam
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: A Clockwork Engineer # the main title
+title: Tech Giant # the main title
 
 tagline: accelerating the mechanization # it will display as the subtitle
 
@@ -29,7 +29,7 @@ github:
   username: olcay # change to your GitHub username
 
 twitter:
-  username: kaliteai # change to your Twitter username
+  username: # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: otomatikmuhendis@yahoo.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/kaliteai # change to your Twitter homepage
+    - https://instagram.com/teknolojidevio # change to your Twitter homepage
     - https://github.com/olcay # change to your GitHub homepage
     # Uncomment below to add more social links
     - https://www.youtube.com/olcaybayramom
@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: img/avatar-icon.png
+avatar: img/authors/olcaybayram.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

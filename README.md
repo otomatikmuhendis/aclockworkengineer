@@ -1,4 +1,4 @@
-# A Clockwork Engineer [![Build](https://github.com/otomatikmuhendis/aclockworkengineer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/otomatikmuhendis/aclockworkengineer/actions/workflows/pages/pages-build-deployment)
+# Tech Giant [![Build](https://github.com/otomatikmuhendis/aclockworkengineer/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/otomatikmuhendis/aclockworkengineer/actions/workflows/pages/pages-build-deployment)
 
 The content of [https://olcay.dev/](https://olcay.dev/) is written by Olcay Bayram beginning on year 2020.
 
